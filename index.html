@@ -28,36 +28,40 @@
                 </a>
             </div>
             <div class="item">
-                <a class="texto-menu" href="">Seu carrinho <i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+                <a class="texto-menu" href=""><span class="carrinho-texto"> Seu carrinho</span> <i class="fa-solid fa-cart-shopping fa-2x"></i></a>
             </div>
         </header>
         <div id="container-interno">
             <nav class="navbar">
                 <div class="item-navbar">
-                    <i class="fa-solid fa-bars fa-2x"></i>
+                    <!-- button ele só da efeito de cx em volta mais senão quiser ñ tem necessidade de ter -->
+                <button>
+                    <!-- para fazer o efeito menu hamburguer criei mais um propriedade onclick -->
+                    <i class="fa-solid fa-bars fa-2x" onclick="exibeMenu()"></i>
+                </button>
                 </div>
 
-                <div class="item-navbar">
+                <div class="item-navbar oculta-navbar">
                     <a class="texto-navbar" href="">Categorias</a>
                 </div>
 
-                <div class="item-navbar">
+                <div class="item-navbar oculta-navbar">
                     <a class="texto-navbar" href="">Jogos</a>
                 </div>
 
-                <div class="item-navbar">
+                <div class="item-navbar oculta-navbar">
                     <a class="texto-navbar" href="">Consoles</a>
                 </div>
 
-                <div class="item-navbar">
+                <div class="item-navbar oculta-navbar">
                     <a class="texto-navbar" href="">Acessórios</a>
                 </div>
 
-                <div class="item-navbar">
+                <div class="item-navbar oculta-navbar">
                     <a class="texto-navbar" href="">Periféricos</a>
                 </div>
 
-                <div class="item-navbar">
+                <div class="item-navbar oculta-navbar">
                     <a class="texto-navbar" href="">Peças de Reposição</a>
                 </div>
 
@@ -87,7 +91,7 @@
 
                     <div id="myCarousel" class="carousel">
                         <div class="carousel__slide">
-                            <figure>
+                            <figure class="promocoes-figure">
                                 <img class="promocoes-img" src="img/promocao1.png" alt="">
                                 <figcaption>
                                     <p>AEROCOOL : R$ 499,90 </p>
@@ -97,7 +101,7 @@
                         </div>
 
                         <div class="carousel__slide">
-                            <figure class="promocoes_slide">
+                            <figure class="promocoes-figure">
                                 <img class="promocoes-img" src="img/promocao2.png" alt="">
                                 <figcaption>
                                     <p>Cadeira Gamer R$ 1.999,90</p>
@@ -107,7 +111,7 @@
                         </div>
 
                         <div class="carousel__slide">
-                            <figure class="promocoes_slide">
+                            <figure class="promocoes-figure">
                                 <img class="promocoes-img" src="img/promocao3.png" alt="">
                                 <figcaption>
                                     <p>Aerocool : R$ 129,90</p>
@@ -117,7 +121,7 @@
                         </div>
 
                         <div class="carousel__slide">
-                            <figure class="promocoes_slide">
+                            <figure class="promocoes-figure">
                                 <img class="promocoes-img" src="img/promocao4.png" alt="">
                                 <figcaption>
                                     <p>Kit 3 Aerocool R$ 369,90 </p>
@@ -219,7 +223,15 @@
     <!-- Importação Fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
+    <!-- --------------------------- -->
+    <!-- IMPORTAÇÃO DO JQuery abaixo -->
+    <!-- --------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
+
+
+
+    <!-- Script especificos da pagina abaixo -->
     <script src="js/script.js"></script>
 </body>
 

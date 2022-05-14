@@ -188,7 +188,26 @@ body {
 } */
 
 
-/* final da versão deskotp finalizado */
+/* altera a cor dos marcadores do carosel : as bolinhas de transição de itens */
+.carousel__dots {
+    color: #fff;
+    /* margin-top: -70px !important;  essa ação ele faz com que o marcador subi um pouco acima*/
+}
+
+.carousel__button{
+    color: white;
+    /* cor do circulo onde está a seta de passar para o lado */
+    background-color: #3534349d;
+}
+/* consultar documentação do site facyapps */
+/* deixa a espessura da seta mais grossa */
+.carousel {
+    --carousel-button-svg-stroke-width: 2.5;
+}
+
+
+
+/* final da versão desktop finalizado */
 
 /* Inicio da versão Mobile */
 /* media Query para versão tablet e celular */
@@ -231,11 +250,45 @@ body {
     }
 
     .rodape{
+        /* 1 coluna apenas */
         grid-template-columns: 1fr;
 
     }
 
+    .carousel__slide {
+        /* lembrar sempre de verifcar % do tam. maximo e assim posso alterar o width debaixo */
+        max-width: var(--carousel-slide-width, 80%);
+        width: 70%;
+    }
 
+    .promocoes-img{
+        /* quero dizer que minha img vai ocupar na versão mobile toda a tela */
+        width: 100%;
+    }
+
+    .promocoes-figure{
+        margin: 0;
+        /* altura do tamanho da cx  */
+        height: 300px;
+    }
+        
+    .carrinho-texto{
+        /* tiro a exibição do item ele vai sumir */
+        display: none;
+    }
+
+    /* ----------------------------- */
+    /* CRIAÇÃO DO MENU HAMBURGUER    */
+    /* ----------------------------- */
+
+    /* vou no html dou espaço e crio mais um class no caso oculta-navbar em todos que eu quero esconder */
+    .oculta-navbar{
+        /* sumir os itens de exibição */
+        display: none;
+    }
+
+
+    
 
 
 
